@@ -4,18 +4,22 @@
 	<title>Portfolio</title>
 
 	<!-- Add style sheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/my_style.css">
 </head>
 <body>
 
 	<header id="head">
 		<div class="container">
 			<!-- style="border:1px solid black;" -->			
-			<a href="index.html" id="name">Richard Garcia</a>
+			<h2><a href="index.html" id="name">Richard Garcia</a></h2>
 			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
+				<ul class="nav nav-tabs">
+				  <li><a href="index.html" data-toggle="tab">About</a></li>
+				  <li class="active"><a href="portfolio.html" data-toggle="tab">Portfolio</a></li>
+				  <li><a href="contact.html" data-toggle="tab">Contact</a></li>
+				</ul>
 			</nav>
 		</div>	
 	</header>
@@ -23,7 +27,7 @@
 	<div id="main-container" class="container">
 		<section class="main-section">
 
-			<h1 class="title">Portfolio</h1>
+			<h2 class="text-success">Portfolio</h2>
 
 			<div class="port">
 				<h2>Hangman</h2>
@@ -39,7 +43,7 @@
 			</div>
 			<div class="port">
 				<h3>Rutgers Info Widget</h3>
-				<img src="assets/images/forrest.jpg" alt="forrest"><
+				<img src="assets/images/forrest.jpg" alt="forrest">
 			</div>
 			<div class="port">
 				<h3>Rock Paper Scissors</h3>
@@ -49,7 +53,7 @@
 
 		<section class="side">	
 			<div class="connect">
-				<h2>Connect with me</h2>
+				<h5>Connect with me</h5>
 				<image class="resize" src="assets/images/git.png" alt="Github image">
 				<image class="resize" src="assets/images/linkedin.png" alt="Linked in image">
 				<image class="resize" src="assets/images/stacked_overflow.png" alt="Stacked overflow image">

@@ -4,49 +4,68 @@
 	<title>Contact</title>
 
 	<!-- Add style sheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
-	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/my_style.css">
 </head>
 <body>
 	<header id="head">
 		<div class="container">
 			<!-- style="border:1px solid black;" -->			
-			<a href="index.html" id="name">Richard Garcia</a>
+			<h2><a href="index.html" id="name">Richard Garcia</a></h2>
 			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
+				<ul class="nav nav-tabs">
+				  <li><a href="index.html" data-toggle="tab">About</a></li>
+				  <li><a href="portfolio.html" data-toggle="tab">Portfolio</a></li>
+				  <li class="active"><a href="contact.html" data-toggle="tab">Contact</a></li>
+				</ul>
 			</nav>
 		</div>	
 	</header>
 
 	<div id="main-container" class="container">
 		<section class="main">
-			<h2 class="title">Contact</h2>
+			<h2 class="text-success">Contact</h2>
 			<hr>
 			<article>
-				<form>
+				<form class="form-horizontal">
+  					<fieldset>
 					<!-- name -->
-					<label for="name">Name</label> 
-					<input type="text" name="name">
+					<div class="form-group">
+					  <label class="col-lg-2 control-label" for="focusedInput">Name</label>
+					  <div class="col-lg-10">
+					  	<input class="form-control" id="focusedInput" type="text" value="John Smith">
+					  </div>
+					</div>
 
 					<!-- email -->
-					<label for="email">Email</label> 
-					<input type="text" name="email">
+					<div class="form-group">
+				      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+				      <div class="col-lg-10">
+				        <input type="text" class="form-control" id="inputEmail" placeholder="John@Smith.com">
+				      </div>
+				    </div>
 
 					<!-- message -->
-					<label for="message">Message</label>
-					<textarea rows="5" cols="50" name="message"></textarea>
+					<div class="form-group">
+				      <label for="textArea" class="col-lg-2 control-label">Message</label>
+				      <div class="col-lg-10">
+				        <textarea class="form-control" rows="3" id="textArea"></textarea>
+				      </div>
+				    </div>
+
 
 					<!-- submit button -->
-					<input class="submit" type="submit" value="Submit">
+					<a href="#" class="btn btn-primary">Submit</a>
+					<!-- <input class="submit" type="submit" value="Submit"> -->
+					</fieldset>
 				</form>
 			</article>
 		</section>
 
 		<section class="side">	
 			<div class="connect">
-				<h2>Connect with me</h2>
+				<h5>Connect with me</h5>
 				<image class="resize" src="assets/images/git.png" alt="Github image">
 				<image class="resize" src="assets/images/linkedin.png" alt="Linked in image">
 				<image class="resize" src="assets/images/stacked_overflow.png" alt="Stacked overflow image">
